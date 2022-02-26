@@ -26,6 +26,18 @@ Then, proceed with installing dependencies:
 yarn install
 ```
 
+### Pre-commit
+
+For using Husky hooks to lint-staged before commit.
+
+We need to make it executable.
+
+use the command.
+
+```sh
+$ chmod +x .husky/pre-commit
+```
+
 ### Compile
 
 Compile the smart contracts with Hardhat:

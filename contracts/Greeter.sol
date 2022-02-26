@@ -21,7 +21,7 @@ contract Greeter {
         console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);
 
         if (keccak256(abi.encodePacked(_greeting)) == keccak256(abi.encodePacked("Test"))) {
-            console.log("Error, not allow greeting 'Test'");
+            console.log("[ERROR] Not allow greeting 'Test'");
             revert("greeting is Test");
         }
 
